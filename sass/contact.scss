@@ -1,0 +1,105 @@
+@import "_variables-mixins";
+
+#contact_page {
+	@include display-flex;
+	min-height: 100%;
+	@media (max-width: 550px) {
+		display: block;
+	}
+	.contact_featured {
+		width: 57%;
+		@include bg-cover;
+		@media (max-width: 550px) {
+			width: 100%;
+			height: 90vw;
+		}
+	}
+	.contact_contents {
+		width: 43%;
+		padding: 7em 0 12em 0;
+		@media (max-width: 550px) {
+			width: 100%;
+		}
+		.wrapper {
+			@include wrapper(410px,0,0,false);
+			@media (max-width: 1130px) {
+				width: 100%;
+				max-width: 100%;
+				float: left;
+				margin: 0;
+				padding: 0 1.5em;
+			}
+		}
+		.contact_head {
+			border-bottom: 7px solid #000;
+			text-transform: uppercase;
+		}
+
+		.contact_infos {
+			border-top: 1px solid #000;
+			text-align: right;
+			text-transform: capitalize;
+			margin-top: 6em;
+			padding-top: 2.35em;
+			.wrapper {
+				max-width: 20em;
+				float: right;	
+			}
+			span {
+				font-size: 1.38em;
+			}
+			.location {
+				display: block;
+
+			}
+			.phone {
+				display: block;
+				margin-top: 1em;
+			}
+		}
+	}
+
+	.form_body {
+		.gform_wrapper {
+			max-width: 100%;
+			input, textarea {
+				width: 100%;
+				font-size: 1.5em;
+				background-color: #ebebeb;
+				border: 1px solid #898989;
+				padding: 0.3em 0.5em;
+			}
+			input {
+				height: 38px;
+			}
+			.gform_fields {
+				li {
+					margin: 2.5em 0;
+					label.gfield_label {
+						display: none;
+					}
+					.ginput_container {
+						margin: 0;
+					}
+				}
+			}
+			.gform_footer {
+				width: 100%;
+				display: inline-block;
+				padding: 0;
+				.button.gform_button  {
+					border: none;
+					border-bottom: 1px solid $color_border_bg_black;
+					width: auto;
+					float: right;
+					background: none;
+					text-transform: uppercase;
+					height: auto;
+					padding: 0 0.5em;
+					font-size: 1.55em;
+				}
+			}
+		}
+	}
+}
+

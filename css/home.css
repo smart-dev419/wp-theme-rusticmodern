@@ -1,0 +1,194 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Rustic Modern website
+
+Created by Sam Silvey
+###################################################
+*/
+.home_first .first_image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center center;
+  -webkit-object-position: center center;
+  -moz-object-position: center center;
+  -ms-object-position: center center;
+  -o-object-position: center center; }
+.home_first .first_content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 3em;
+  text-align: center;
+  color: #fff; }
+
+.home_second {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+  @media (max-width: 550px) {
+    .home_second {
+      display: block; } }
+  .home_second .second_image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 42%; }
+    @media (max-width: 550px) {
+      .home_second .second_image {
+        width: 100%;
+        height: 45vw; } }
+  .home_second .second_content {
+    width: 58%;
+    padding: 7em 0;
+    border-left: 2px solid #000; }
+    @media (max-width: 1080px) {
+      .home_second .second_content {
+        padding: 7em 1.5em; } }
+    @media (max-width: 550px) {
+      .home_second .second_content {
+        width: 100%; } }
+    .home_second .second_content .wrapper {
+      max-width: 530px;
+      margin: 0 auto 0; }
+      .home_second .second_content .wrapper:before, .home_second .second_content .wrapper:after {
+        content: " ";
+        display: table; }
+      .home_second .second_content .wrapper:after {
+        clear: both; }
+
+.home_third {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  border-bottom: 5px solid #000;
+  border-top: 5px solid #000; }
+  @media (max-width: 979px) {
+    .home_third {
+      display: block; } }
+  .home_third .third_content {
+    width: 29%;
+    padding: 5em 2.5em; }
+    @media (max-width: 979px) {
+      .home_third .third_content {
+        width: 100%; } }
+  .home_third .third_image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 71%;
+    border-left: 2px solid #000; }
+    @media (max-width: 979px) {
+      .home_third .third_image {
+        width: 100%;
+        height: 47vw;
+        border-left: none; } }
+
+.home_fourth {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 7em 0 3em 0;
+  text-align: center;
+  color: #fff; }
+  .home_fourth .fourth_content {
+    max-width: 520px;
+    margin: 0 auto 0; }
+    .home_fourth .fourth_content:before, .home_fourth .fourth_content:after {
+      content: " ";
+      display: table; }
+    .home_fourth .fourth_content:after {
+      clear: both; }
+    @media (max-width: 660px) {
+      .home_fourth .fourth_content {
+        width: 100%;
+        float: left;
+        margin: 0 0 0;
+        padding: 0 1.5em; } }
+
+section.team {
+  padding: 5em 0; }
+  section.team .wrapper {
+    max-width: 950px;
+    margin: 0 auto 0; }
+    section.team .wrapper:before, section.team .wrapper:after {
+      content: " ";
+      display: table; }
+    section.team .wrapper:after {
+      clear: both; }
+    @media (max-width: 1090px) {
+      section.team .wrapper {
+        width: 100%;
+        float: left;
+        margin: 0 0 0;
+        padding: 0 1.5em; } }
+
+.team_members {
+  width: 100%;
+  display: inline-block; }
+  .team_members li {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+    margin-bottom: 3.5em; }
+    @media (max-width: 550px) {
+      .team_members li {
+        width: 47%;
+        margin-right: 6%; } }
+    .team_members li:nth-child(4n) {
+      margin-right: 0; }
+    .team_members li:nth-child(4n+1) {
+      clear: left; }
+    @media (max-width: 550px) {
+      .team_members li:nth-child(2n) {
+        margin-right: 0; } }
+    @media (max-width: 550px) {
+      .team_members li:nth-child(2n+1) {
+        clear: left; } }
+    .team_members li img {
+      width: 100%; }
+    .team_members li figcaption {
+      margin-top: 1em; }
+      .team_members li figcaption h5 {
+        font-family: 'GothamLight';
+        line-height: 1.25; }
+
+.members_ctrl {
+  text-align: center;
+  width: 100%;
+  display: inline-block; }
+  .members_ctrl .ctrl_btn {
+    display: inline-block;
+    width: 7em;
+    height: 7em;
+    line-height: 7em;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.5em; }
+
+/*# sourceMappingURL=home.css.map */

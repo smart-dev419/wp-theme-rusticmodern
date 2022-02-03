@@ -1,0 +1,146 @@
+@import "_variables-mixins";
+
+.home_first {
+	.first_image {
+		width: 100%;
+		height: 100vh;
+		@include image-cover-center;
+	}
+	.first_content {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 3em;
+		text-align: center;
+		color: #fff;
+	}
+}
+
+.home_second {
+	@include display-flex;
+	@media (max-width: 550px) {
+		display: block;
+	}
+	.second_image {
+		@include bg-cover;
+		width: 42%;
+		@media (max-width: 550px) {
+			width: 100%;
+			height: 45vw;
+		}
+	}
+	.second_content {
+		width: 58%;
+		padding: 7em 0;
+		border-left: 2px solid #000;
+		@media (max-width: 1080px) {
+			padding: 7em 1.5em;
+		}
+		@media (max-width: 550px) {
+			width: 100%;
+		}
+		.wrapper {
+			@include wrapper(530px, 0, 0, false);
+		}
+	}
+}
+
+.home_third {
+	@include display-flex;
+	border-bottom: 5px solid #000;
+	border-top: 5px solid #000;
+	@media (max-width: 979px) {
+		display: block;
+	}
+	.third_content {
+		width: 29%;
+		padding: 5em 2.5em;
+		@media (max-width: 979px) {
+			width: 100%;
+		}
+	}
+	.third_image {
+		@include bg-cover;
+		width: 71%;
+		border-left: 2px solid #000;
+		@media (max-width: 979px) {
+			width: 100%;
+			height: 47vw;
+			border-left: none;
+		}
+	}
+}
+
+.home_fourth {
+	@include bg-cover;
+	padding: 7em 0 3em 0;
+	text-align: center;
+	color: #fff;
+	.fourth_content {
+		@include wrapper(520px);
+	}
+}
+
+section.team {
+	padding: 5em 0;
+	.wrapper {
+		@include wrapper(950px);
+	}
+}
+.team_members {
+	width: 100%;
+	display: inline-block;
+	li {
+		float: left;
+		width: 22%;
+		margin-right: 4%;
+		margin-bottom: 3.5em;
+		@media (max-width: 550px) {
+			width: 47%;
+			margin-right: 6%;
+		}
+		&:nth-child(4n) {
+			margin-right: 0;
+		}		
+		&:nth-child(4n+1) {
+			clear: left;
+		}		
+		&:nth-child(2n) {
+			@media (max-width: 550px) {
+				margin-right: 0;
+			}
+		}		
+		&:nth-child(2n+1) {
+			@media (max-width: 550px) {
+				clear: left;
+			}
+		}
+		img {
+			width: 100%;
+		}
+		figcaption {
+			margin-top: 1em;
+			h5 {
+				font-family: 'GothamLight';
+				line-height: 1.25;
+			}
+		}
+	}
+}
+
+.members_ctrl {
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	.ctrl_btn {
+		display: inline-block;
+		width: 7em;
+		height: 7em;
+		line-height: 7em;
+		border-radius: 50%;
+		border: 1px solid #000;
+		cursor: pointer;
+		text-transform: capitalize;
+		font-size: 1.5em;
+	}
+}

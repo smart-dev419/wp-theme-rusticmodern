@@ -1,0 +1,142 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Rustic Modern website
+
+Created by Sam Silvey
+###################################################
+*/
+#portfolio_page {
+  padding: 5em 5.5em 10em 5.5em; }
+  @media (max-width: 1100px) {
+    #portfolio_page {
+      padding: 5em 1.5em 7em 1.5em; } }
+
+.portfolio_head {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #363636;
+  padding: 2.5em;
+  margin-bottom: 2em; }
+  .portfolio_head .site_title {
+    font-size: 3em;
+    margin-bottom: 0.10em; }
+  .portfolio_head .page_title {
+    text-transform: uppercase;
+    font-family: 'GothamLight';
+    font-size: 3.9em;
+    margin: 0; }
+    .portfolio_head .page_title span.count {
+      font-family: 'GothamBold'; }
+
+.portfolios {
+  width: 100%;
+  display: inline-block;
+  position: relative; }
+
+.portfolio_list .portfolio_item {
+  width: 16.6666%;
+  float: left; }
+  @media (min-width: 550px) and (max-width: 1100px) {
+    .portfolio_list .portfolio_item {
+      width: 25%; } }
+  @media (max-width: 550px) {
+    .portfolio_list .portfolio_item {
+      width: 50%; } }
+  .portfolio_list .portfolio_item .port_thumb {
+    cursor: pointer; }
+    .portfolio_list .portfolio_item .port_thumb img {
+      width: 100%;
+      height: 11vw;
+      object-fit: cover;
+      -webkit-object-fit: cover;
+      -moz-object-fit: cover;
+      -ms-object-fit: cover;
+      -o-object-fit: cover;
+      object-position: center center;
+      -webkit-object-position: center center;
+      -moz-object-position: center center;
+      -ms-object-position: center center;
+      -o-object-position: center center; }
+      @media (min-width: 550px) and (max-width: 1100px) {
+        .portfolio_list .portfolio_item .port_thumb img {
+          height: 17vw; } }
+      @media (max-width: 550px) {
+        .portfolio_list .portfolio_item .port_thumb img {
+          height: 33vw; } }
+  .portfolio_list .portfolio_item .port_details {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #dbdad6;
+    padding-right: 10em; }
+    @media (max-width: 1100px) {
+      .portfolio_list .portfolio_item .port_details {
+        padding-right: 0; } }
+    .portfolio_list .portfolio_item .port_details .port_featured {
+      width: 59%;
+      padding-right: 7em;
+      float: left; }
+      @media (min-width: 867px) and (max-width: 1100px) {
+        .portfolio_list .portfolio_item .port_details .port_featured {
+          padding-right: 2em; } }
+      @media (max-width: 867px) {
+        .portfolio_list .portfolio_item .port_details .port_featured {
+          width: 100%;
+          padding-right: 0; } }
+      .portfolio_list .portfolio_item .port_details .port_featured h3 {
+        text-transform: uppercase;
+        text-transform: capitalize; }
+      .portfolio_list .portfolio_item .port_details .port_featured img {
+        width: 100%; }
+        @media (max-width: 867px) {
+          .portfolio_list .portfolio_item .port_details .port_featured img {
+            max-height: 100vw;
+            object-fit: cover;
+            -webkit-object-fit: cover;
+            -moz-object-fit: cover;
+            -ms-object-fit: cover;
+            -o-object-fit: cover;
+            object-position: center center;
+            -webkit-object-position: center center;
+            -moz-object-position: center center;
+            -ms-object-position: center center;
+            -o-object-position: center center; } }
+    .portfolio_list .portfolio_item .port_details .port_contents {
+      width: 41%;
+      float: left;
+      padding-top: 5em; }
+      @media (max-width: 867px) {
+        .portfolio_list .portfolio_item .port_details .port_contents {
+          width: 100%; } }
+      .portfolio_list .portfolio_item .port_details .port_contents .return_portfolio {
+        width: 100%;
+        display: inline-block;
+        margin-top: 5em; }
+        .portfolio_list .portfolio_item .port_details .port_contents .return_portfolio a {
+          font-family: 'GothamBold';
+          font-size: 1.7em;
+          border-bottom: 1px solid #363636;
+          padding: 0.1em 0.38em; }
+
+.portfolios_ctrl {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-top: 2em; }
+  .portfolios_ctrl .ctrl_btn {
+    display: inline-block;
+    width: 7em;
+    height: 7em;
+    line-height: 7em;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.5em; }
+
+/*# sourceMappingURL=portfolio.css.map */

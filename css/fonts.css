@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'GothamBlack';
+    src: url('../fonts/gotham-black/gotham-black.eot');
+    src: url('../fonts/gotham-black/gotham-black.eot') format('embedded-opentype'),
+         url('../fonts/gotham-black/gotham-black.woff2') format('woff2'),
+         url('../fonts/gotham-black/gotham-black.woff') format('woff'),
+         url('../fonts/gotham-black/gotham-black.ttf') format('truetype'),
+         url('../fonts/gotham-black/gotham-black.svg#GothamBlack') format('svg');
+}
+
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('../fonts/gotham-bold/gotham-bold.eot');
+    src: url('../fonts/gotham-bold/gotham-bold.eot') format('embedded-opentype'),
+         url('../fonts/gotham-bold/gotham-bold.woff2') format('woff2'),
+         url('../fonts/gotham-bold/gotham-bold.woff') format('woff'),
+         url('../fonts/gotham-bold/gotham-bold.ttf') format('truetype'),
+         url('../fonts/gotham-bold/gotham-bold.svg#GothamBold') format('svg');
+}
+
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/gotham-book/gotham-book.eot');
+    src: url('../fonts/gotham-book/gotham-book.eot') format('embedded-opentype'),
+         url('../fonts/gotham-book/gotham-book.woff2') format('woff2'),
+         url('../fonts/gotham-book/gotham-book.woff') format('woff'),
+         url('../fonts/gotham-book/gotham-book.ttf') format('truetype'),
+         url('../fonts/gotham-book/gotham-book.svg#GothamBook') format('svg');
+}
+
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../fonts/gotham-medium/gotham-medium.eot');
+    src: url('../fonts/gotham-medium/gotham-medium.eot') format('embedded-opentype'),
+         url('../fonts/gotham-medium/gotham-medium.woff2') format('woff2'),
+         url('../fonts/gotham-medium/gotham-medium.woff') format('woff'),
+         url('../fonts/gotham-medium/gotham-medium.ttf') format('truetype'),
+         url('../fonts/gotham-medium/gotham-medium.svg#GothamMedium') format('svg');
+}
+
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fonts/gotham-light/gotham-light.eot');
+    src: url('../fonts/gotham-light/gotham-light.eot') format('embedded-opentype'),
+         url('../fonts/gotham-light/gotham-light.woff2') format('woff2'),
+         url('../fonts/gotham-light/gotham-light.woff') format('woff'),
+         url('../fonts/gotham-light/gotham-light.ttf') format('truetype'),
+         url('../fonts/gotham-light/gotham-light.svg#GothamLight') format('svg');
+}
+
+
+

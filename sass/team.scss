@@ -1,0 +1,48 @@
+@import "_variables-mixins";
+
+#team_page {
+	padding: 5em 0;
+	.wrapper {
+		@include wrapper(950px);
+	}
+}
+.team_members {
+	width: 100%;
+	display: inline-block;
+	li {
+		float: left;
+		width: 22%;
+		margin-right: 4%;
+		margin-bottom: 3.5em;
+		@media (max-width: 550px) {
+			width: 47%;
+			margin-right: 6%;
+		}
+		&:nth-child(4n) {
+			margin-right: 0;
+		}		
+		&:nth-child(4n+1) {
+			clear: left;
+		}		
+		&:nth-child(2n) {
+			@media (max-width: 550px) {
+				margin-right: 0;
+			}
+		}		
+		&:nth-child(2n+1) {
+			@media (max-width: 550px) {
+				clear: left;
+			}
+		}
+		img {
+			width: 100%;
+		}
+		figcaption {
+			margin-top: 1em;
+			h5 {
+				font-family: 'GothamLight';
+				line-height: 1.25;
+			}
+		}
+	}
+}

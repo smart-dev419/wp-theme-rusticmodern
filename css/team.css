@@ -1,0 +1,57 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Rustic Modern website
+
+Created by Sam Silvey
+###################################################
+*/
+#team_page {
+  padding: 5em 0; }
+  #team_page .wrapper {
+    max-width: 950px;
+    margin: 0 auto 0; }
+    #team_page .wrapper:before, #team_page .wrapper:after {
+      content: " ";
+      display: table; }
+    #team_page .wrapper:after {
+      clear: both; }
+    @media (max-width: 1090px) {
+      #team_page .wrapper {
+        width: 100%;
+        float: left;
+        margin: 0 0 0;
+        padding: 0 1.5em; } }
+
+.team_members {
+  width: 100%;
+  display: inline-block; }
+  .team_members li {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+    margin-bottom: 3.5em; }
+    @media (max-width: 550px) {
+      .team_members li {
+        width: 47%;
+        margin-right: 6%; } }
+    .team_members li:nth-child(4n) {
+      margin-right: 0; }
+    .team_members li:nth-child(4n+1) {
+      clear: left; }
+    @media (max-width: 550px) {
+      .team_members li:nth-child(2n) {
+        margin-right: 0; } }
+    @media (max-width: 550px) {
+      .team_members li:nth-child(2n+1) {
+        clear: left; } }
+    .team_members li img {
+      width: 100%; }
+    .team_members li figcaption {
+      margin-top: 1em; }
+      .team_members li figcaption h5 {
+        font-family: 'GothamLight';
+        line-height: 1.25; }
+
+/*# sourceMappingURL=team.css.map */

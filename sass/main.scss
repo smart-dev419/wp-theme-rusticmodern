@@ -1,0 +1,277 @@
+@import "_variables-mixins";
+@import "../css/fonts.css";
+
+#page {
+	@include display-flex;
+	@media (max-width: 997px) {
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}	
+}
+#site-sidebar {
+	width: 150px;
+	background-color: #231f20;
+	padding: 3em 1.2em;
+	color: #fff;
+	min-height: 100vh;
+	@media (max-width: 767px) {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		padding: 0;
+		height: 52px;
+		min-height: 0;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'GothamLight';
+	}
+}
+#wrapper {
+	width: calc(100% - 150px);
+	position: relative;
+	@media (max-width: 767px) {
+		width: 100%;
+		margin-top: 52px;
+	}
+	#site-main {
+		width: 100%;
+		float: left;
+		background-color: $color_bg;
+		> #container {
+		    padding: 8em;
+		}
+	}
+	#site-footer {
+		width: 100%;
+		float: left;
+		padding: 6.5em 0 7.5em 0;
+
+		background-color: $color_border_bg_black;
+		color: #fff;
+	}
+
+}
+
+/* =Sidebar
+-------------------------------------------------------------- */
+#site-branding {
+	text-align: center;
+	@media (max-width: 767px) {
+		position: absolute;
+		left: 15px;
+		top: 6px;
+		z-index: 10;
+	}
+	img {
+		@media (max-width: 767px) {
+			max-height: 38px;
+		}
+	}
+	h1 {
+		margin-top: 1.33em;
+		font-size: 1.65em;
+		text-transform: capitalize;
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+}
+#site-sidebar {
+	.latest_blogs {
+		text-transform: capitalize;
+		padding: 0 1.1em;
+		@media (max-width: 767px) {
+			display: none;
+		}
+		h3 {
+			width: 100%;
+			display: inline-block;
+			font-size: 1.5em;
+			margin-bottom: 1em;
+		}
+		.blog_list {
+			width: 100%;
+			display: inline-block;
+			li {
+				margin: 1.35em 0;
+				h6 {
+					font-size: 11px;
+					margin: 0;
+					a {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.all_blogs_link {
+			width: 100%;
+			display: inline-block;
+			margin-top: 5em;
+			font-size: 12px;
+			text-align: center;
+			a {
+				padding: 5px 3px;
+				display: inline-block;
+				border-bottom: 1px solid #fffadc;
+			}
+		}
+	}
+}
+
+/* =Sidebar
+-------------------------------------------------------------- */
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+
+#primany-nav {
+	margin: 2em 0;
+	padding: 2em 0;
+	border-top: 1px solid #fffadc;
+	border-bottom: 1px solid #fffadc;
+	text-align: center;
+	.nav {
+		display: inline-block;
+		text-align: left;
+		.menu-item {
+			position: relative;
+			a {
+				display: block;
+				font-size: 1.38em;
+				line-height: 1;
+				padding: 0.56em 0;
+				text-transform: uppercase;
+				&:hover {
+					background: none;
+				}
+				&:focus {
+					background: none;
+				}
+			}
+
+		}
+	}
+}
+
+.mean-container {
+	.mean-bar {
+		background: #231f20;
+		z-index: 9;
+	}
+	.mean-nav {
+		background: #231f20;
+		ul {
+			li {
+				a {
+					font-size: 12px;
+					padding: 0.7em 5%;
+				}
+			}
+		}
+	}
+	a.meanmenu-reveal {
+		width: 28px;
+		span {
+			height: 4px;
+			margin-top: 4px;
+		}
+	}	
+} 
+	
+
+
+
+
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#site-footer {
+	.wrapper {
+		@include wrapper(900px);
+	}
+	.latest_blogs {
+		float: left;
+		width: 41.5%;
+		padding-right: 3em;
+		@media (max-width: 550px) {
+			width: 100%;
+			padding-right: 0;
+			margin: 6em 0;
+		}
+		.blog_list {
+			li {
+				&:nth-child(2n) {
+					margin-top: 3em;
+				}
+				h6 {
+					font-family: 'GothamBold';
+				}
+			}
+		}
+	}
+}
+
+
+#footer-nav {
+	width: 17%;
+	float: left;
+	@media (max-width: 550px) {
+		width: 100%;
+	}
+	.nav {
+		display: inline-block;
+		.menu-item {
+			position: relative;
+			a {
+				display: block;
+				font-size: 1.6em;
+				line-height: 1;
+				padding: 0.38em 0;
+				text-transform: capitalize;
+				&:hover {
+					background: none;
+				}
+				&:focus {
+					background: none;
+				}
+			}
+
+		}
+	}
+}
+
+#site-info {
+	float: left;
+	width: 41.5%;
+	@media (max-width: 550px) {
+		width: 100%;
+	}
+	img {
+		float: left;
+		max-width: 70px;
+	}
+	figcaption {
+		float: left;
+		padding-left: 18px;
+		max-width: calc(100% - 70px);
+	}
+}
+
+
+
+.other_elements {
+    position: absolute;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
